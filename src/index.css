@@ -1,13 +1,97 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 25px;
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: black;
+  padding: 15px 5% 5px;
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.registration {
+  padding: 25px 0 0 0;
+  text-align: center;
+}
+
+.registration h2 {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.input_lable_component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.input_lable_component {
+  margin-bottom: 50px;
+}
+
+.input_lable_component>.input_lable_component_input {
+  width: 200px;
+  height: 30px;
+  margin-left: 10%;
+}
+
+.input_lable_component>.Password_ {
+  margin-left: 7%;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+
+.registration button {
+  display: inline-block;
+  width: 150px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 10px 5px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+footer ul {
+  display: flex;
+  background-color: #000000;
+  padding: 10px 0 20px;
+  flex-wrap: wrap;
+  color: white;
+  gap: 60px;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style-type: none;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
 }

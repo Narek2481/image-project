@@ -7,6 +7,16 @@ const Registration = () => {
   const [name, setName] = useState('');
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  function contains_valid_name(input) {
+    return input.length >= 3 && /[A-Z]/.test(input) && /[a-z]/.test(input);
+  }
+  function validate_password(password) {
+    if (password.length < 8) {
+      console.log( "Password must be at least 8 characters long.");
+      return false
+    }
+  return true;
+  }
   return (
     <div className="registration">
       <h2>Registration</h2>
@@ -46,7 +56,16 @@ const Registration = () => {
             value: password,
             setValue: setPassword
           }} />
-        <button type="submit" onClick={() => registration_submit(name, email, login, password)} >Submit</button>
+        <button type="submit" onClick={(e) => {
+          e.preventDefault()
+          if(contains_valid_name(name) && validate_password(password)){
+            return registration_submit(name, email, login, password);
+          }else{
+            console.log("err write corect");
+          }
+          
+        }
+        } >Submit</button>
         <Footer></Footer>
       </form>
     </div>

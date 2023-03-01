@@ -9,20 +9,20 @@ export default function Our_contacts() {
         <div className="contacts">
             <div>
                 <a href="#">
-                    <img src={instagram}></img>
+                    {/* <img src={instagram}></img> */}
                     Instagram
                 </a>
             </div>
             <div>
-                <img src={twiter} />
+                {/* <img src={twiter} /> */}
                 <a href="#">Twiter</a>
             </div>
             <div>
-                <img src={email} />
+                {/* <img src={email} /> */}
                 <a href="#">Email</a>
             </div>
             <div>
-                <img src={Facebook} />
+                {/* <img src={Facebook} /> */}
                 <a href="#">Facebook</a>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom";
 import About_us from "../About_us"
-import Sign_in from "../Sign_in"
+import Sign_in from "../sign_in/Sign_in"
 import Registration from "../Registration/Registration"
 
 export default function Nav() {

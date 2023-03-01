@@ -37,14 +37,13 @@ nav>ul>li>a {
   text-align: center;
   padding-bottom: 35px;
 }
-
-.input_lable_component {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+.registration h3{
+  padding-bottom: 35px;
+  color: red;
 }
+
+/* .input_lable_component {
+} */
 
 .input_lable_component {
   margin-bottom: 50px;
@@ -53,11 +52,18 @@ nav>ul>li>a {
 .input_lable_component>.input_lable_component_input {
   width: 200px;
   height: 30px;
-  margin-left: 10%;
+}
+.input_lable_component div{
+  padding-bottom: 10px;
 }
 
-.input_lable_component>.Password_ {
-  margin-left: 7%;
+.sign_in h2 {
+  margin-bottom: 30px;
+}
+.sign_in div input{
+  width: 200px;
+  height: 30px;
+  margin: 20px 0;
 }
 
 input:focus {
@@ -65,15 +71,23 @@ input:focus {
 }
 
 
-.registration button {
+.registration button ,.sign_in button {
   display: inline-block;
-  width: 150px;
+  width: 200px ;
   border: none;
   color: white;
   background-color: black;
   padding: 10px 5px;
   margin-bottom: 50px;
   cursor: pointer;
+  border-radius: 30px;
+}
+.sign_in{
+  padding: 25px 0 0 0;
+  text-align: center;
+}
+.sign_in{
+  padding-bottom: 35px;
 }
 
 footer ul {

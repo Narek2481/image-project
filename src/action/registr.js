@@ -4,7 +4,8 @@ export default async function registration_submit(name, email, login, password) 
         const respons = await axios.post("http://localhost:4000/registr_submit", {
             name, email, login, password
         });
-        alert(respons.data.message || "good");
+        console.log(respons.data)
+        alert(respons.data || "good");
     }catch(e){
         alert(e);
     }
